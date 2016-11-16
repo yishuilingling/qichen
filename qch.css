@@ -1,0 +1,479 @@
+/* 首页 */
+#index{
+	width: 4.24rem;
+	position: relative;
+}
+/* 通用的 */
+.top{
+	width: 3.99rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-weight: bold;
+	font-size: 0.27rem;
+	background: #1E2223;
+	color: #fff;
+	padding: 0 0.13rem;
+}
+.top li{
+	cursor: pointer;
+	float: left;
+}
+.top li:nth-child(2){
+	font-size: 0.22rem;
+	font-weight: normal;
+}
+.top li:nth-child(3){
+	margin: 0 0.83rem;
+	letter-spacing: 0.02rem;
+}
+.top li:nth-child(4){
+	float: right;
+}
+.clear{
+	overflow: hidden;
+}
+/* 首页下边 */
+.center{
+	width: 4.25rem;
+	height: 6.95rem;
+	background: url(images/bg01.jpg) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+#index .center .c1 img:nth-child(1){
+	width: 4.25rem;
+}
+#index .center .c1 .jzh{
+	width: 3.35rem;
+	margin: 0.22rem auto 0.37rem;
+}
+#index .center .c1 .jzh img{
+	width: 3.35rem;
+}
+#index .center .c2{
+	width: 2.89rem;
+	margin: 0 auto;
+	font-size: .27rem;
+	text-align: center;
+	font-weight: bold;
+}
+.blue{
+	width: 2.89rem;
+	margin: 0 auto;
+	height: .66rem;
+	background: url(images/btn01.png) 0 0 no-repeat;
+	background-size: 100% 100%;	
+	line-height: .66rem;
+	color: #fff;
+	margin-bottom: .13rem;
+	text-shadow: 0 0 0.02rem red;
+	cursor: pointer;
+	font-size: .3rem;
+	text-align: center;
+	font-weight: bold;
+	font-style: oblique;
+}
+#index .center .c2 span{
+	display: inline-block;
+	font-style: oblique;
+	color: #134094;	
+	text-decoration: underline;
+	cursor: pointer;
+	margin-top: 0.23rem;
+}
+
+/* 活动说明 */
+.mask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+.explain{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 3.98rem;
+	margin: 0 auto;
+	height: 5.1rem;
+	margin-left: -1.99rem;
+	margin-top: -2.4rem;
+	box-sizing: border-box;
+	border: 0.06rem solid #022A71;
+	background: #fff;
+	padding: 0.15rem 0.14rem;
+	border-radius: 0.2rem;
+	display: none;
+}
+.explain .shm{
+	font-size: .17rem;
+	margin-bottom: .2rem;
+}
+
+.explain .shm dt{
+	color: #032470;
+	font-weight: bold;
+	line-height: .35rem;
+}
+.explain .shm dd{
+	text-indent: .4rem;
+	line-height: .26rem;
+	color: #959595;
+}
+
+/* 确认是否在现场 */
+#index .confirm{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 4rem;
+	margin: 0 auto;
+	height: 3.8rem;
+	margin-left: -2rem;
+	margin-top: -2.3rem;
+	box-sizing: border-box;
+	border: 0.06rem solid #022A71;
+	background: #fff;
+	padding: 0.15rem 0.1rem;
+	border-radius: 0.2rem;
+	display: none;
+}
+#index .confirm ul{
+	width: 3.8rem;
+	text-align: center;
+}
+#index .confirm li{
+	font-size: .25rem;
+	line-height: .42rem;
+	font-weight: bold;
+	color: #134094;
+}
+#index .confirm li:nth-child(4){
+	margin-top: .1rem;
+}
+#index .confirm .blue{
+	color: #fff;
+	font-size: .3rem;
+	line-height: .6rem;
+}
+
+/* 抽奖页面*/
+#index .draw{
+	text-align: center;
+	display: none;
+}
+#index .draw h2{
+	font-size: .36rem;
+	line-height: .4rem;
+	color: #134094;
+	font-weight: 900;
+	-webkit-text-stroke: .02rem #134094;
+	margin: .22rem 0 .1rem;
+}
+#index .draw p{
+	font-size: .16rem;
+	color: #666E71;
+}
+#index .draw ol{
+	width: 4rem;
+	margin: .16rem auto;
+}
+#index .draw li{
+	float: left;
+}
+#index .draw li:nth-child(3n+2){
+	margin: 0 .02rem;
+}
+#index .draw li img{
+	width: 1.3rem;
+	height: 1.93rem;
+}
+
+/* 抽奖结果 */
+#result{
+	width: 4.24rem;
+	position: relative;
+}
+
+/* 已经抽过 */
+#result .center .c1{
+	display: none;
+}
+#result .center .c1 img{
+	width: 4.24rem;
+}
+#result .center .c1 .have{
+	width: 3.83rem;
+	margin: 0 auto;
+}
+#result .center .c1 .have h2{
+	font-size: .45rem;
+	font-weight: bold;
+	text-align: center;
+	color: #012772;
+	-webkit-text-stroke: .02rem;
+	margin: 0.25rem 0;
+}
+#result .center .c1 .have p{
+	font-size: .22rem;
+	line-height: .4rem;
+	color: #656469;
+}
+
+/* 没有中奖 */
+#result .center .c1 .sorry{
+	width: 3.8rem;
+	margin: 0 auto;
+}
+#result .center .c1 .sorry h2{
+	font-size: .45rem;
+	font-weight: bold;
+	text-align: center;
+	color: #C90B15;
+	-webkit-text-stroke: .02rem;
+	margin: 0.25rem 0;
+}
+#result .center .c1 .sorry p{
+	font-size: .23rem;
+	line-height: .43rem;
+	color: #6E7177;
+}
+#result .center .c1 .sorry span{
+	color: #0E3575;
+	font-weight: bold;
+}
+#result .center .c1 .sorry strong{
+	-webkit-text-stroke: .03rem;
+	color: #0E3575;
+}
+
+/* 中车模 */
+
+#result .center .c2{
+	width: 3.9rem;
+	margin: 0 auto;
+	display: none;
+}
+#result .center .c2 h1{
+	padding-top: 0.2rem;
+	font-size: .25rem;
+	color: #04276F;
+	text-align: center;
+}
+#result .center .c2 .box{
+	width: 3.7rem;
+	padding: 0.1rem;
+	margin: .1rem 0;
+	background: #fff;
+	position: relative;
+}
+#result .center .c2 .box p{
+	text-align: center;
+	font-size: .17rem;
+	color: #6F6F6F;
+	line-height: .3rem;
+}
+#result .center .c2 .box img{
+	display: block;
+	width: 3.14rem;
+	margin: .25rem auto;
+}
+#result .center .c2 .box .code{
+	width: 2.77rem;
+	margin: .1rem auto;
+}
+#result .center .c2 .box ul{
+	position: absolute;
+	left:.85rem;
+	top: .63rem;
+}
+#result .center .c2 .box li{
+	margin-right: .44rem;
+	font-size: .2rem;
+	color: #fff;
+	float: left;
+	font-style: oblique;
+}
+#result .center .c2 h3{
+	font-size: .2rem;
+	color: #04276F;
+	font-weight: bold;
+	line-height: .3rem;
+}
+#result .center .c2 h5{
+	font-size: .17rem;
+	color: #6F6F6F;
+	line-height: .3rem;
+	font-weight: normal;
+	margin-bottom: .1rem;
+}
+.share div{
+	float: left;
+	line-height: .48rem;
+	font-size: .2rem;
+	color: #6F6F6F;
+}
+.share  img{
+	width: .48rem;
+	margin-left: .12rem;
+}
+
+/* 抽中话费 */
+#result .center .c3{
+	width: 3.9rem;
+	margin: 0 auto;
+	display: none;
+}
+#result .center .c3 h3{
+	font-size: .35rem;
+	color: #CB022D;
+	text-align: center;
+	line-height: .66rem;
+}
+#result .center .c3 p{
+	font-size: .2rem;
+	color: #6F6F6F;
+	line-height: .3rem;
+}
+#result .center .c3 .imgs{
+	width: 3.69rem;
+	margin: .1rem 0;
+}
+#result .center .c3 .imgss{
+	width: 3.69rem;
+	height: .53rem;
+	margin: .1rem 0;
+	background: url(images/shuru2.jpg) 0 0 no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#result .center .c3 .imgss input{
+	position: absolute;
+	top: 0;
+	left: .6rem;
+	height: .53rem;
+	width: 3.07rem;
+	border: none;
+	font-size: .3rem;
+}
+#result .center .c3 .blue{
+	margin-bottom: .26rem;
+}
+#result .hehe img{
+	position: absolute;
+	left: 0;
+	top: .5rem;
+	width: 4.24rem;
+	display: none;
+}
+
+/* 启辰开回家 */
+#gohome .home {
+	width: 2.09rem;
+	margin: 0 auto;	
+	padding: .38rem 0 .1rem;
+}
+#gohome .home img{
+	width: 2.09rem;
+}
+#gohome .center p{
+	padding:0 .15rem;
+	font-size: .17rem;
+    color: #6F6F6F;
+    line-height: .3rem;
+    margin-bottom: .1rem;
+}
+#gohome .center .blue{
+	margin: .1rem auto;
+}
+#gohome .center .c2{
+ 	text-align: center;
+}
+#gohome .center .c2 span{
+	display: inline-block;
+    font-style: oblique;
+    color: #134094;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0.23rem 0 .3rem;
+    font-size: .27rem;
+    font-weight: bold;
+}
+#gohome .center  .share{
+	width: 3.9rem;
+	margin: 0 auto;
+}
+#gohome .center div[class*='shuru']{
+	width: 3.69rem;
+	height: .53rem;
+	margin: .1rem auto;
+	background-size: 100% 100%;
+	position: relative;
+} 
+#gohome .center .shuru1{
+	background: url(images/shuru1.jpg) 0 0 no-repeat;
+}
+#gohome .center .shuru2{
+	background: url(images/shuru2.jpg) 0 0 no-repeat;
+}
+#gohome .center input{
+	position: absolute;
+	top: 0;
+	left: .6rem;
+	height: .53rem;
+	width: 3.07rem;
+	border: none;
+	font-size: .3rem;
+}
+
+
+/* 活动规则 */
+#gohome .explain{
+	height: 5.44rem;
+	margin-top: -2.78rem;
+	/* display: none */
+}
+#gohome .explain dd{
+	overflow: hidden;
+	text-indent: 0;
+}
+#gohome .explain dd div{
+	float: left;
+}
+#gohome .explain dd div:nth-child(2n){
+	width: 3.3rem;
+}
+/* 不见不散 */
+.sub,.fail{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 4rem;
+	height: 3.4rem;
+	margin-left:-2rem;
+	margin-top: -1.9rem;
+	box-sizing: border-box;
+    border: 0.06rem solid #022A71;
+    border-radius: .2rem;
+    background: #fff;
+    padding: .4rem .2rem;
+    display: none;
+}
+.sub h2{
+	text-align: center;
+	font-size: .46rem;
+	color: #00296B; 
+	text-shadow: 0 0 .02rem;
+}
+.sub p,.fail p{
+	font-size: .25rem;
+    color: #6F6F6F;
+    line-height: .3rem;
+    margin: .25rem 0;
+}
+
+.fail{
+	display: none;
+}
